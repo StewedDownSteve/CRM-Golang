@@ -4,7 +4,7 @@ This project is a simple CRM (Customer Relationship Management) application buil
 
 
 The Simple UI I made for the CRM, allows you to add new customers and see a list of all customers in the DB.
-![CRM Screenshot]()
+![CRM Screenshot](https://github.com/StewedDownSteve/CRM-Golang/blob/main/CRM-Go-UI-SH.png)
 
 
 To test the back end I used Postman to make sure i could add, delete, and view all customers
@@ -35,4 +35,7 @@ Overall, this project helped solidify my knowledge of Go, Fiber, and front-end i
 
 ## Other Projects
 
+**Go Web Scraper** https://github.com/StewedDownSteve/Go-html-web-scraper
+
+**Project Management App (Full-Stack)** https://github.com/StewedDownSteve/ProjectManagment_FS_App
 
