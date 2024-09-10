@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple CRM Go!</title>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <h1>Simple CRM Go!</h1>
+    <span>A Customer Relationship Manager Made With Golang. Front End HTML, JavaScript.</span>
+
+    <!-- Form to add a new lead -->
+     <!-- id is same as id set up in Go files -->
+     <h2>Add Lead</h2>
+     <form id="leadForm">
+        <input type="text" id="name" placeholder="Name" required><br>
+        <input type="text" id="company" placeholder="Company" required><br>
+        <input type="email" id="email" placeholder="Email" required><br>
+        <input type="text" id="phone" placeholder="Phone" required><br>
+        <button type="submit">Add Lead</button>
+     </form>
+
+
+     <!-- Section to display leads -->
+      <h2>All Leads</h2>
+      <ul id="leadList"></ul>
+    
+</body>
+</html>
