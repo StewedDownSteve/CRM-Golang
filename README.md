@@ -8,7 +8,7 @@ The Simple UI I made for the CRM, allows you to add new customers and see a list
 
 
 To test the back end I used Postman to make sure i could add, delete, and view all customers
-![Postman Testint]()
+![Postman Testint](https://github.com/StewedDownSteve/CRM-Golang/blob/main/CRM-Go-Testing-SH.png)
 
 ## How It's Made:
 
