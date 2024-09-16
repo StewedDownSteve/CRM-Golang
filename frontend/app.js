@@ -29,7 +29,7 @@ document.getElementById('leadForm').addEventListener('submit', async (event) => 
         name: document.getElementById('name').value,
         company: document.getElementById('company').value,
         email: document.getElementById('email').value,
-        phone: document.getElementById('phone').value
+        phone: parseInt(document.getElementById('phone').value) // Convert phone to integer
     };
 
     try {
@@ -58,3 +58,17 @@ document.getElementById('leadForm').addEventListener('submit', async (event) => 
 
 // Initial fetch of leads when the page loads
 fetchLeads();
+
+
+
+// Postman format for POST, GET requests
+// {
+//     "ID": 1,
+//     "CreatedAt": "some sort of date format",
+//     "UpdatedAt": "some sort of date format",
+//     "DeletedAt": null,
+//     "name": "John Doe",
+//     "company": "Random Company",
+//     "email": "random@email.com",
+//     "phone": 1232223232
+// }
