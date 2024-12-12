@@ -3,28 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple CRM Go!</title>
+    <title>Tailwind CRM UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="app.js"></script>
 </head>
-<body>
-    <h1>Simple CRM Go!</h1>
-    <span>A Customer Relationship Manager Made With Golang. Front End HTML, JavaScript.</span>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Sets the bg color and text color -->
+    <div class="min-h-screen flex flex-col items-center p-4">
 
-    <!-- Form to add a new lead -->
+        <!-- HEADER! -->
+         <header class="w-full max-w-4xl text-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-900">
+                Tailwind CRM UI & Go Backend
+            </h1>
+         </header>
+
+
+         <!-- Main Content -->
+          <main class="w-full max-w-4xl grid gap-6 md:grid-cols-2">
+            <!-- FORM Section -->
+             <section class="bg-white p-6 rounded-lg border border-gray-200 shadow-md">
+                <h2 class="text-xl font-bold mb-4 text-gray-700">Add New Lead</h2>
+                <!-- Each input line on the form is in its own div -->
+                 <!-- mt = margin top, p = padding -->
+                  <!-- focus is similar to hover, once that field is slected the CSS effects happen focus:cssComand when higlighted -->
+                <form id="lead-form" class="space-y-4">
+                    <!-- Name Input -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600" for="name">Name</label>
+                        <input type="text" id="name" class="w-full mt-2 p-2.5 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <!-- Company Input -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600" for="company">Company</label>
+                        <input type="text" id="company"  class="w-full mt-2 p-2.5 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <!-- Email input -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600" for="email">Email</label>
+                        <input type="text" id="name"  class="w-full mt-2 p-2.5 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <!-- Phone Input -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-600" for="phone">Phone</label>
+                        <input type="text" id="name"  class="w-full mt-2 p-2.5 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full py-2.5 bg-blue-600 text-white font-medium text-sm rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-1 active:scale-95">Submit</button>
+                </form>
+             </section>
+
+
+             <!-- CUSTOMER LIST SECTION -->
+              <!-- <section class="bg-white p-6 rounded shadow-md">
+                <h2 class="text-xl font-semibold mb-4">Customer List</h2>
+                <div class="overflow-y-auto max-h-96"> -->
+                    <!-- PLACEHOLDER LIST | Connect to DB later -->
+                     <!-- <ul id="customer-list" class="space-y-2">
+                        <li class="p-3 border rounded">John Doe, Acme Inc., john@johndoe.com, 222-333-4444</li>
+                        <li class="p-3 border rounded">John Doe, Acme Inc., john@johndoe.com, 222-333-4444</li>
+                        <li class="p-3 border rounded">John Doe, Acme Inc., john@johndoe.com, 222-333-4444</li>
+
+                     </ul> -->
+
+                <!-- </div> -->
+                <section class="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
+                    <h2 class="text-xl font-bold mb-4 text-gray-700">Customer List</h2>
+                    <div class="overflow-y-auto max-h-96 space-y-3">
+                      <!-- Example Customer Card -->
+                      <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm flex justify-between items-center">
+                        <div>
+                          <p class="text-sm font-medium text-gray-800">John Doe</p>
+                          <p class="text-sm text-gray-500">Acme Inc.</p>
+                          <p class="text-sm text-gray-500">john.doe@example.com</p>
+                          <p class="text-sm text-gray-500">123-456-7890</p>
+                        </div>
+                        <button class="text-sm text-red-600 hover:underline hover:text-red-700">Remove</button>
+                      </div>
+                      <!-- Repeat Customer Card -->
+                      <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm flex justify-between items-center">
+                        <div>
+                          <p class="text-sm font-medium text-gray-800">Jane Smith</p>
+                          <p class="text-sm text-gray-500">Widgets LLC</p>
+                          <p class="text-sm text-gray-500">jane.smith@example.com</p>
+                          <p class="text-sm text-gray-500">987-654-3210</p>
+                        </div>
+                        <button class="text-sm text-red-600 hover:underline hover:text-red-700">Remove</button>
+                      </div>
+                      <div class="p-4 bg-gray-50 border border-gray-200 rounded-lg shadow-sm flex justify-between items-center">
+                        <div>
+                          <p class="text-sm font-medium text-gray-800">Jane Smith</p>
+                          <p class="text-sm text-gray-500">Widgets LLC</p>
+                          <p class="text-sm text-gray-500">jane.smith@example.com</p>
+                          <p class="text-sm text-gray-500">987-654-3210</p>
+                        </div>
+                        <button class="text-sm text-red-600 hover:underline hover:text-red-700">Remove</button>
+                      </div>
+                      <!-- Add more cards dynamically here -->
+
+                    </div>
+
+                    
+                  </section>
+
+
+              </section>
+          </main>
+
+          <!-- FOOTER!!!! -->
+           <footer class="w-full max-w-4xl text-center mt-6 tex-sm text-gray-500">
+            &copy; 2024 Simple CRM | SteveRepDev
+
+           </footer>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- Form to add a new lead -->
      <!-- id is same as id set up in Go files -->
-     <h2>Add Lead</h2>
+     <!-- <h2>Add Lead</h2>
      <form id="leadForm">
         <input type="text" id="name" placeholder="Name" required><br>
         <input type="text" id="company" placeholder="Company" required><br>
         <input type="email" id="email" placeholder="Email" required><br>
         <input type="text" id="phone" placeholder="Phone" required><br>
         <button type="submit">Add Lead</button>
-     </form>
+     </form> -->
 
 
      <!-- Section to display leads -->
-      <h2>All Leads</h2>
-      <ul id="leadList"></ul>
-    
-</body>
-</html>
+      <!-- <h2>All Leads</h2>
+      <ul id="leadList"></ul> -->
