@@ -2,13 +2,15 @@
 
 This project is a simple CRM (Customer Relationship Management) application built using Go and Fiber. It demonstrates basic CRUD operations with a Go backend and a simple front-end interface to interact with the API.
 
+## 1/10/25 - I've been rebuilding this app to with Next.js and Tailwind for the UI.
+![Tailwind UI desktop](https://github.com/StewedDownSteve/CRM-Golang/blob/main/CRM-Tailwind-Go-sh1.png)
+![Tailwind UI tablet](https://github.com/StewedDownSteve/CRM-Golang/blob/main/CRM-Tailwind-Go-sh2.png)
+
 
 The orginal UI I made for the CRM with just HTML.
 ![CRM Screenshot](https://github.com/StewedDownSteve/CRM-Golang/blob/main/CRM-Go-UI-SH.png)
 
 
-The upgraded UI that succesfully conected to the backend via JavaScript.
-![Tailwind UI]()
 
 ## How It's Made:
 
